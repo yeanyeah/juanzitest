@@ -1,14 +1,15 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-# 定义m为位移，起始值是0
-m = 0
+
 '''
     创建二分法查找函数，假设L是一个有序列表，x是要查找的元素,
     如果在L中找到x，则返回x这个元素在L中的索引，否则返回‘x不存在’的信息
 '''
+# 定义m为位移，起始值是0
+m = 0
+
 def find2(x,L):
-    # 将m定义为全局变量，使函数可以调用m
     global m
     n = int(len(L)/2)
     # 如果列表只有一个元素且x与之不相等：
@@ -29,5 +30,5 @@ def find2(x,L):
     else:
         print('x=L[%d]' %(m+n))
 
-List = range(6)
+List = range(1)
 find2(5,List)
